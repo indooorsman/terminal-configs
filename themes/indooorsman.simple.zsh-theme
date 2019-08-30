@@ -19,4 +19,4 @@ random_emoji() {
  echo "${emojis[$ind+1]} "
 }
 
-PROMPT='%{$fg[cyan]%}$(prefix_1)$(dir)%{$fg[green]%} $(git_prompt_info)%{$fg[cyan]%}$(prefix_2)$(random_emoji) » %{$reset_color%}'
+PROMPT='%{$fg[cyan]%}$(prefix_1)$(dir)%{$fg[green]%} $(git_prompt_info)%{$fg[cyan]%}$(prefix_2)%{$fg[white]%}$(random_emoji) %{$fg[cyan]%}» %{$reset_color%}'
