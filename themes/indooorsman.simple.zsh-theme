@@ -9,7 +9,17 @@ prefix_2() {
 }
 
 dir() {
-  echo "`pwd`"
+  p=`pwd`
+  h=`env|grep '^HOME='|cut -c 6-`
+  rp=${p/$h/'🏠 '}
+  echo $rp
+}
+
+gitbranch() {
+  branch=`git branch 2>/dev/null`
+  if [ "$?" = "0" ]; then
+    echo $branch | grep '^\*'
+  fi
 }
 
 random_emoji() {
@@ -19,4 +29,4 @@ random_emoji() {
  echo "${emojis[$ind+1]} "
 }
 
-PROMPT='%{$fg[cyan]%}$(prefix_1)$(dir)%{$fg[green]%} $(git_prompt_info)%{$fg[cyan]%}$(prefix_2)%{$fg[white]%}$(random_emoji) %{$fg[cyan]%}» %{$reset_color%}'
+PROMPT='%{$fg[cyan]%}$(prefix_1)$(dir)%{$fg[green]%} $(gitbranch)%{$fg[cyan]%}$(prefix_2)%{$fg[white]%}$(random_emoji) %{$fg[cyan]%}» %{$reset_color%}'
