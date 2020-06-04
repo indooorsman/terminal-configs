@@ -78,3 +78,4 @@ source $ZSH/oh-my-zsh.sh
 source /Users/chuanyewang/.bashrc
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$PATH:/Users/chuanyewang/.nvm/versions/node/v10.13.0/lib/node_modules/fwsu/cli/bin"

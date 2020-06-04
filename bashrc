@@ -29,4 +29,9 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 
 eval "$(rbenv init -)"
 
+#export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;
+
+export DENO_INSTALL="/Users/chuanyewang/.deno"
+export PATH="/Library/PostgreSQL/12/bin:$DENO_INSTALL/bin:$PATH"
+
 export PATH="$PATH:/bin:/usr/bin:/usr/local/bin:/Users/chuanyewang/bin:$GOROOT/bin:/Users/chuanyewang/workspace/integration/cli/bin:/Users/chuanyewang/flutter/bin:/Users/chuanyewang/android/bin:/Users/chuanyewang/.yarn/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Users/chuanyewang/.rvm/gems/ruby-2.3.4/bin:/Users/chuanyewang/.rvm/gems/ruby-2.3.4@global/bin:/Users/chuanyewang/.rvm/rubies/ruby-2.3.4/bin:/Users/chuanyewang/Downloads/platform-tools:$PATH:$HOME/.rvm/bin:$GOPATH/bin"
