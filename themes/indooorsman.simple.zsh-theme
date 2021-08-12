@@ -11,7 +11,7 @@ prefix_2() {
 dir() {
   p=`pwd`
   h=`env|grep '^HOME='|cut -c 6-`
-  rp=${p/$h/'🏠 '}
+  rp=${p/$h/'🏠~'}
   echo $rp
 }
 

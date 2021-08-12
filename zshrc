@@ -1,5 +1,17 @@
 # If you come from bash you might have to change your $PATH.
 # Path to your oh-my-zsh installation.
+
+# move below to .bashrc
+# alias ll="ls -lahG"
+# alias ls="ls -ahG"
+# export ZSH_DISABLE_COMPFIX="true"
+# export HOMEBREW_NO_AUTO_UPDATE=1
+# export GOPATH=/Users/chuanyewang/workspace/common/src/go:$GOPATH
+export DENO_INSTALL="/Users/chuanyewang/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
+ZSH_DISABLE_COMPFIX="true"
+
 export ZSH=/Users/chuanyewang/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -77,5 +89,6 @@ source $ZSH/oh-my-zsh.sh
 
 source /Users/chuanyewang/.bashrc
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-export PATH="$PATH:/Users/chuanyewang/.nvm/versions/node/v10.13.0/lib/node_modules/fwsu/cli/bin"
+[[ -s "/Users/chuanyewang/.gvm/scripts/gvm" ]] && source "/Users/chuanyewang/.gvm/scripts/gvm"
+
+export GOPATH=/Users/chuanyewang/workspace/common/src/go
